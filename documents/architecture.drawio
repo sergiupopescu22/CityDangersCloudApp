@@ -1,0 +1,93 @@
+<mxfile host="65bd71144e">
+    <diagram id="JjEeS8rsnWTl7D2ULlOX" name="Page-1">
+        <mxGraphModel dx="1151" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="27" value="UI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="200" width="450" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="DATC Project - PrimeMinister Team&lt;br&gt;&lt;div&gt;&lt;span&gt;Ponta Ciprian&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Popescu Sergiu&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="10" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="UI -&amp;gt; WebPage&amp;nbsp;&lt;br&gt;React Native&lt;br&gt;Deployed in Azure using Docker containers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="240" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="UI -&amp;gt; iOS App&lt;br&gt;React Native&amp;nbsp;&lt;br&gt;?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="245" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="WebAPI&lt;br&gt;Dotnet C#&lt;br&gt;Deployed in Azure using Docker containers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="35" y="410" width="180" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="638" y="190"/>
+                            <mxPoint x="370" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="594" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="594" y="160"/>
+                            <mxPoint x="125" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="MapsAPI&lt;br&gt;GoogleMaps/HERE Maps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="255" width="175" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="107" y="410" as="sourcePoint"/>
+                        <mxPoint x="157" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="135" y="440" as="sourcePoint"/>
+                        <mxPoint x="135" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="370" y="455"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Database&lt;br&gt;NoSQL&lt;br&gt;Hosted in Azure" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="570" width="170" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="630" as="sourcePoint"/>
+                        <mxPoint x="180" y="580" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="125" y="625"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Background Worker&lt;br&gt;Dotnet C#&lt;br&gt;Deployed in Azure using Docker containers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="414" width="172.5" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="MessageQueues" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="450" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="625" as="sourcePoint"/>
+                        <mxPoint x="656.25" y="499" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="656" y="625"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="To Discuss:&lt;br&gt;Admin and User interfaces (Webpage for admin and app for user?)&lt;br&gt;Optimistic Concurency&lt;br&gt;Background Worker should notify the UI" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="720" width="450" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
