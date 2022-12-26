@@ -11,18 +11,20 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-
 import "@reach/combobox/styles.css";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 export default function Map() {
 //   const center = useMemo(() => ({ lat: 45.75, lng: 21.23  }), []);
   const [center, setCenter] = useState({ lat: 45.75, lng: 21.23  });
   const [selected, setSelected] = useState(null);
+  const [markers, setMarkers] = useState([]);
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyB2xlEHHa5jwKB8mNCewScaqTtjwmLVCI4",
     libraries: ["places"],
   });
+
 
   if (!isLoaded) return <div>Loading...</div>;
 
@@ -33,8 +35,18 @@ export default function Map() {
         zoom={12}
         center={center}
         mapContainerClassName="map-container"
+        onClick={(event)=>{
+          setMarkers((current)=>[
+            {
+              lat:event.latLng.lat(),
+              lng:event.latLng.lng(),
+              time: new Date(),
+            },
+          ]);
+        }}
         >
-        {selected && <Marker position={selected} />}
+        {/* {selected && <Marker position={selected} />} */}
+        {markers.map((marker) => (<Marker  position={{lat: marker.lat, lng: marker.lng}}/>))}
         </GoogleMap>
     </>
   );

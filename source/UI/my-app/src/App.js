@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-// import PlacesAutocomplete from './components/PlacesAutocomplete.js'
 import Map from './components/Map';
 
 function App() {
