@@ -17,27 +17,34 @@ code {
   margin: 20px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 2px solid steelblue;
   padding: 20px;
   border-radius: 5px;
 }
 
-.places-container {
-  position: absolute;
-  top: 55px;
-  left: 35%;
-  transform: translateX(-40%);
-  z-index:10;
-  width: 300px;
+.formular-container{
+  width: 10%;
+  height: 600px;
+  float: left;
+  padding: 10px;
 }
 
+
 .map-container{
+  width: 65%;
+  height: 600px;
+  float: right;
+  padding: 10px;
+}
+
+.gmaps-container{
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 .formular-container{
-  width: 50%;
+  width: 30%;
+  float: left;
 }
 
 .combobox-input {
