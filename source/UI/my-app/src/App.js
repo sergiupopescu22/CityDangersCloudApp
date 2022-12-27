@@ -7,19 +7,36 @@ import NewProblemForm from './components/NewProblemForm';
 function App() {
 
   const [center, setCenter] = useState({ lat: 45.75, lng: 21.23  });
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState({ lat: null, lng: null  });
+  const [isShown, setIsShown] = useState(false);
+  const onClick = (event) =>{
+    setIsShown(current => !current);
+  }
 
   return (
     <div className="container">
       <div className="formular-container">
-        <h3>Add the city you are intereseted in:</h3>
-        <PlacesAutocomplete setSelected={setSelected} setCenter={setCenter}/>
-        {/* <h3>Do you want to report a problem?</h3>
-        <button>Yes</button> */}
-        <NewProblemForm location={selected}/>
+        <div>
+          <h3 style={{"text-align": "center"}}>City of interest:</h3>
+          <PlacesAutocomplete setSelected={setSelected} setCenter={setCenter}/>
+        </div>
+      
+        {!isShown && (
+        <div class="button-div">
+          <button class="button-24" onClick={onClick}>Report a new issue</button>
+        </div>
+        )}
+
+        {isShown && (
+        <div class="report-informations">
+          <NewProblemForm  location={selected}/>
+          <button class="button-24" onClick={onClick}>Abort report</button>
+        </div>
+        )}
       </div>
+      
       <div className="map-container">
-        <Map center={center}/>
+        <Map center={center} setSelected={setSelected}/>
       </div> 
     </div>
   );

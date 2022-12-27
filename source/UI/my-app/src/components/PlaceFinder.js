@@ -29,7 +29,7 @@ export default function PlacesAutocomplete({ setSelected, setCenter })  {
       clearSuggestions();
       const results = await getGeocode({address});
       const {lat, lng} = await getLatLng(results[0]);
-      setSelected({lat,lng});
+      // setSelected({lat,lng});
       setCenter({lat,lng});
     };
   

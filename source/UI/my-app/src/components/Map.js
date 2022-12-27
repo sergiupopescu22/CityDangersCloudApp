@@ -3,7 +3,7 @@ import { GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 
-export default function Map({center, setSelected}) {
+export default function Map(props) {
 //   const center = useMemo(() => ({ lat: 45.75, lng: 21.23  }), []);
 
   const [markers, setMarkers] = useState([]);
@@ -13,6 +13,8 @@ export default function Map({center, setSelected}) {
     libraries: ["places"],
   });
 
+  // props.setSelected(props.center);
+
 
   if (!isLoaded) return <div>Loading...</div>;
 
@@ -20,7 +22,7 @@ export default function Map({center, setSelected}) {
     <>
       <GoogleMap
       zoom={12}
-      center={center}
+      center = {props.center}
       mapContainerClassName="gmaps-container"
       onClick={(event)=>{
         setMarkers((current)=>[
@@ -30,10 +32,10 @@ export default function Map({center, setSelected}) {
             time: new Date(),
           },
         ]);
+        props.setSelected({lat:event.latLng.lat(), lng:event.latLng.lng()});
       }}
       >
-      {/* {selected && <Marker position={selected} />} */}
-      {markers.map((marker) => (<Marker  position={{lat: marker.lat, lng: marker.lng}}/>))}
+      {markers.map((marker) => (<Marker  position={{lat: marker.lat, lng: marker.lng}} />)) }
       
       </GoogleMap>
     </>
