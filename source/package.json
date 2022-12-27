@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@reach/combobox": "^0.18.0",
+    "combobox": "^1.0.1",
+    "react-google-places-autocomplete": "^3.4.0",
+    "use-places-autocomplete": "^4.0.0"
+  }
+}

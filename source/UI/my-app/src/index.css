@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid steelblue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.formular-container{
+  width: 20%;
+  height: 600px;
+  float: left;
+  padding: 10px;
+}
+
+.button-div{
+  text-align: center;
+  margin-top:60px;
+}
+
+.map-container{
+  width: 75%;
+  height: 600px;
+  float: right;
+  padding: 10px;
+}
+
+.gmaps-container{
+  width: 100%;
+  height: 600px;
+}
+
+.report-informations{
+  border: 2px solid steelblue;
+  text-align: center;
+  margin-top: 20px;
+  /* float: left; */
+  /* display: none; */
+}
+
+.combobox-input {
+  
+  width: 98%;
+  padding: 0.5rem;
+}
+
+
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+.button-24-submit {
+  background: #1ee90b;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button-24-submit:hover,
+.button-24-submit:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24-submit:active {
+  opacity: .5;
+}
