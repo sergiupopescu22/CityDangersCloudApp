@@ -39,3 +39,44 @@ D:\_OneDrive\OneDrive - Universitatea Politehnica Timisoara\DATC\DATC_project\so
 D:\_OneDrive\OneDrive - Universitatea Politehnica Timisoara\DATC\DATC_project\source\webapi\bin\Debug\net6.0\System.Memory.Data.dll
 D:\_OneDrive\OneDrive - Universitatea Politehnica Timisoara\DATC\DATC_project\source\webapi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\_OneDrive\OneDrive - Universitatea Politehnica Timisoara\DATC\DATC_project\source\webapi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\appsettings.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\webapi.exe
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\webapi.deps.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\webapi.runtimeconfig.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\webapi.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\webapi.pdb
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Azure.Core.Amqp.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\Microsoft.WindowsAzure.Storage.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.csproj.AssemblyReference.cache
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.AssemblyInfoInputs.cache
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.AssemblyInfo.cs
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.csproj.CoreCompileInputs.cache
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\scopedcss\bundle\webapi.styles.css
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.csproj.CopyComplete
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\refint\webapi.dll
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.pdb
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\webapi.genruntimeconfig.cache
+C:\Users\sepopesc\Desktop\Facultate\An 4\Semestrul 1\DATC\Project\source\webapi\obj\Debug\net6.0\ref\webapi.dll

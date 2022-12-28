@@ -61,7 +61,6 @@ code {
 }
 
 
-
 /* CSS */
 .button-24 {
   background: #FF4742;
@@ -102,8 +101,8 @@ code {
 }
 
 .button-24-submit {
-  background: #1ee90b;
-  border: 1px solid #FF4742;
+  background: #16af08;
+  border: 1px solid #16af08;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -132,7 +131,7 @@ code {
 .button-24-submit:active {
   background-color: initial;
   background-position: 0 0;
-  color: #FF4742;
+  color: #16af08;
 }
 
 .button-24-submit:active {
