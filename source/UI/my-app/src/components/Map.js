@@ -1,20 +1,25 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-
+import axios from 'axios'
 
 export default function Map(props) {
 //   const center = useMemo(() => ({ lat: 45.75, lng: 21.23  }), []);
 
   const [markers, setMarkers] = useState([]);
+  const [posts, setPosts] = useState([])
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyB2xlEHHa5jwKB8mNCewScaqTtjwmLVCI4",
     libraries: ["places"],
   });
-
-  // props.setSelected(props.center);
-
+  useEffect(()=>{
+    axios.get('https://localhost:7281/issuecontroller')
+    .then(res=>{console.log(res)
+    setPosts(res.data)})
+    .catch((err=>{
+        console.log(err)
+    }))
+  },[])
 
   if (!isLoaded) return <div>Loading...</div>;
 
@@ -36,6 +41,7 @@ export default function Map(props) {
       }}
       >
       {markers.map((marker) => (<Marker  position={{lat: marker.lat, lng: marker.lng}} />)) }
+      {posts.map((post)=>(<Marker  key={post.rowKey} position={{lat: post.latitudine, lng: post.longitudine}} />))}
       
       </GoogleMap>
     </>

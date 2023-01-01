@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import Map from './components/Map';
 import PlacesAutocomplete from "./components/PlaceFinder";
 import NewProblemForm from './components/NewProblemForm';
+import GetData from './components/GetData';
 
 function App() {
 
@@ -38,6 +39,8 @@ function App() {
       <div className="map-container">
         <Map center={center} setSelected={setSelected}/>
       </div> 
+
+      {/* <GetData /> */}
     </div>
   );
 }
