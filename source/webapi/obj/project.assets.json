@@ -6312,24 +6312,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sepopesc\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sepopesc\\Desktop\\Facultate\\An 4\\Semestrul 1\\DATC\\Project\\source\\webapi\\webapi.csproj",
+      "projectUniqueName": "D:\\_OneDrive\\OneDrive - Universitatea Politehnica Timisoara\\DATC\\DATC_project\\source\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\sepopesc\\Desktop\\Facultate\\An 4\\Semestrul 1\\DATC\\Project\\source\\webapi\\webapi.csproj",
-      "packagesPath": "C:\\Users\\sepopesc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sepopesc\\Desktop\\Facultate\\An 4\\Semestrul 1\\DATC\\Project\\source\\webapi\\obj\\",
+      "projectPath": "D:\\_OneDrive\\OneDrive - Universitatea Politehnica Timisoara\\DATC\\DATC_project\\source\\webapi\\webapi.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\_OneDrive\\OneDrive - Universitatea Politehnica Timisoara\\DATC\\DATC_project\\source\\webapi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sepopesc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6384,7 +6390,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,73 +16,53 @@ namespace background_worker
 
     public class IssueEntry : TableEntity
     {
-        public string FirstName { get; set; }
-        public string Surname { get; set; }
-        public string SocialSecurityNumber { get; set; }
-        public DateTime ReportingTime { get; set; }
+        public double Latitudine { get; set; }
+        public double Longitudine { get; set; }
         public string Issue { get; set; }
 
         public IssueEntry()
         {
             this.PartitionKey = "";
             this.RowKey = "";
-            this.FirstName = "";
-            this.Surname = "";
-            this.SocialSecurityNumber = "";
-            this.ReportingTime = DateTime.Now;
+            this.Latitudine = 0;
+            this.Longitudine = 0;
             this.Issue = "";
         }
 
-        public IssueEntry(string FirstName, string Surname, string SocialSecurityNumber, DateTime ReportingTime, string Issue)
+        public IssueEntry(string CNP, string Data, double Latitudine, double Longitudine, string Issue)
         {
-            this.PartitionKey = SocialSecurityNumber;
-            this.RowKey = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
-            this.FirstName = FirstName;
-            this.Surname = Surname;
-            this.SocialSecurityNumber = SocialSecurityNumber;
-            this.ReportingTime = ReportingTime;
+            this.PartitionKey = CNP;
+            this.RowKey = Data;
+            this.Latitudine = Latitudine;
+            this.Longitudine = Longitudine;
             this.Issue = Issue;
         }
 
         public IssueEntry(IssueEntry issueEntry)
         {
-            this.PartitionKey = issueEntry.SocialSecurityNumber;
-            this.RowKey = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
-            this.FirstName = issueEntry.FirstName;
-            this.Surname = issueEntry.Surname;
-            this.SocialSecurityNumber = issueEntry.SocialSecurityNumber;
-            this.ReportingTime = issueEntry.ReportingTime;
+            this.PartitionKey = issueEntry.PartitionKey;
+            this.RowKey = issueEntry.RowKey;
+            this.Latitudine = issueEntry.Latitudine;
+            this.Longitudine = issueEntry.Longitudine;
             this.Issue = issueEntry.Issue;
         }
     }
 
     public class StatisticEntry : TableEntity
     {
-        public string FirstName { get; set; }
-        public string Surname { get; set; }
-        public string SocialSecurityNumber { get; set; }
-        public DateTime StatisticTime { get; set; }
         public int ReportedIssues { get; set; }
 
         public StatisticEntry()
         {
             this.PartitionKey = "";
             this.RowKey = "";
-            this.FirstName = "";
-            this.Surname = "";
-            this.SocialSecurityNumber = "";
-            this.StatisticTime = DateTime.Now;
             this.ReportedIssues = 0;
         }
 
-        public StatisticEntry(string FirstName, string Surname, string SocialSecurityNumber, DateTime StatisticTime, int ReportedIssues)
+        public StatisticEntry(string SocialSecurityNumber, int ReportedIssues)
         {
             this.PartitionKey = SocialSecurityNumber;
-            this.RowKey = "";
-            this.FirstName = FirstName;
-            this.Surname = Surname;
-            this.SocialSecurityNumber = SocialSecurityNumber;
-            this.StatisticTime = StatisticTime;
+            this.RowKey = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
             this.ReportedIssues = ReportedIssues;
         }
     }
