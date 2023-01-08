@@ -7,9 +7,9 @@ namespace background_worker
     class Program
     {
         static IssueTableManager issueTableManager = new IssueTableManager(
-            "datcpontaciprian",
-            "0r3bz8HHcCROB056ceMNhZfeXhAdycvogaf8pjT4cz7c/tQYp7Ov4IBRCXI2zuFHMIK4cimFgD/a+AStMpDS9Q==",
-            "datcProjectIssueTable"
+        "citydangersapp",
+        "FXCo0fgVH688Ju69OHk0ghsEQ58cWMOyqYVYeEcxd3rcAZJjp09JYJVWJ0R3brOcorrOGQvRpfUz+AStYiA/Dw==",
+        "ReportedIssues"
         );
 
         static StatisticTableManager statisticTableManager = new StatisticTableManager(

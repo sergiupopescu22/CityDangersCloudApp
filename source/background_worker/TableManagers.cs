@@ -83,15 +83,36 @@ namespace background_worker
                                             
             do
             {
-                TableQuerySegment<StatisticEntry> result = await table.ExecuteQuerySegmentedAsync(query, token);  
-
-                foreach (StatisticEntry row in result)
+                try
                 {
-                    TableOperation operation = TableOperation.Delete(row);
-                    await table.ExecuteAsync(operation);
-                }
+                    TableQuerySegment<StatisticEntry> result = await table.ExecuteQuerySegmentedAsync(query, token);  
 
-                token = result.ContinuationToken;
+                    foreach (StatisticEntry row in result)
+                    {
+                        TableOperation operation = TableOperation.Delete(row);
+                        await table.ExecuteAsync(operation);
+                    }
+
+                    token = result.ContinuationToken;
+                }
+                catch (StorageException storageException)
+                {
+                    if(storageException.RequestInformation.HttpStatusCode == 412)
+                    {
+                        Console.WriteLine("Optimistic concurrency violation");
+                        return;
+                    }
+                    else
+                    {
+                        Console.WriteLine(storageException.ToString());
+                        return;
+                    }
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception.ToString());
+                    return;
+                }
             } while (token != null);  
         }
 
@@ -107,7 +128,7 @@ namespace background_worker
 
                 foreach(var statisticEntry in statisticEntriesList)
                 {
-                    if(statisticEntry.SocialSecurityNumber == issueEntry.SocialSecurityNumber)
+                    if(statisticEntry.PartitionKey == issueEntry.PartitionKey)
                     {
                         statisticEntry.ReportedIssues++;
                         isInList = true;
@@ -117,18 +138,36 @@ namespace background_worker
                 if(!isInList)
                 {
                     statisticEntriesList.Add(new StatisticEntry(
-                        issueEntry.FirstName,
-                        issueEntry.Surname,
-                        issueEntry.SocialSecurityNumber,
-                        DateTime.Now,
+                        issueEntry.PartitionKey,
                         1
                     ));
                 }
             }
 
-            foreach(var statisticEntry in statisticEntriesList)
+            try
             {
-                await this.Update(statisticEntry);
+                foreach(var statisticEntry in statisticEntriesList)
+                {
+                    await this.Update(statisticEntry);
+                }
+            }
+            catch (StorageException storageException)
+            {
+                if(storageException.RequestInformation.HttpStatusCode == 412)
+                {
+                    Console.WriteLine("Optimistic concurrency violation");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine(storageException.ToString());
+                    return;
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.ToString());
+                return;
             }
         }
     }
