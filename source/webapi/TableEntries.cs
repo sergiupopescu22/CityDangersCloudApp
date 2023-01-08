@@ -18,8 +18,6 @@ namespace webapi
     {
         public double Latitudine { get; set; }
         public double Longitudine { get; set; }
-        // public string SocialSecurityNumber { get; set; }
-        // public DateTime ReportingTime { get; set; }
         public string Issue { get; set; }
 
         public IssueEntry()
@@ -28,15 +26,14 @@ namespace webapi
             this.RowKey = "";
             this.Latitudine = 0;
             this.Longitudine = 0;
-            // this.ReportingTime = DateTime.Now;
             this.Issue = "";
         }
 
-        public IssueEntry(string CNP, string data, double latitudine, double logitudine, string Issue)
+        public IssueEntry(string CNP, string Data, double Latitudine, double Longitudine, string Issue)
         {
             this.PartitionKey = CNP;
-            this.RowKey = data;
-            this.Latitudine = latitudine;
+            this.RowKey = Data;
+            this.Latitudine = Latitudine;
             this.Longitudine = Longitudine;
             this.Issue = Issue;
         }

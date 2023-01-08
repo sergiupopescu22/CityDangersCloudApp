@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Azure.Messaging.ServiceBus;
 using Azure.Identity;
+using Microsoft.WindowsAzure.Storage;
 
 namespace webapi.Controllers;
 
@@ -45,9 +46,30 @@ public class IssueController : ControllerBase
     [HttpDelete(Name = "DeleteIssue")]
     public async Task<string> Delete(GeneralTableEntry generalTableEntry)
     {
-        await issueTableManager.Delete(generalTableEntry.PartitionKey, generalTableEntry.RowKey);
-        await SendMessageToBackgroundWorker("DELETE");
-        return "Delete Succesful";
+        try
+        {
+            await issueTableManager.Delete(generalTableEntry.PartitionKey, generalTableEntry.RowKey);
+            await SendMessageToBackgroundWorker("DELETE");
+            return "Delete Succesful";
+        }
+        catch (StorageException storageException)
+        {
+            await SendMessageToBackgroundWorker("ERROR");
+            
+            if(storageException.RequestInformation.HttpStatusCode == 412)
+            {
+                return "Optimistic concurrency violation";
+            }
+            else
+            {
+                return storageException.ToString();
+            }
+        }
+        catch (Exception exception)
+        {
+            await SendMessageToBackgroundWorker("ERROR");
+            return exception.ToString();
+        }
     }
 
     private async Task SendMessageToBackgroundWorker(string message)
