@@ -10,14 +10,17 @@ import {
   ComboboxOption,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
+import { useState, useEffect } from "react";
 
-export default function PlacesAutocomplete({ setSelected, setCenter })  {
+export default function PlacesAutocomplete({ setSelected, setCenter, selected })  {
+
     const {
       ready,
       value,
       setValue,
       suggestions: { status, data },
       clearSuggestions,
+
     } = usePlacesAutocomplete();
   
     const handleInput = (e) => {
@@ -29,18 +32,22 @@ export default function PlacesAutocomplete({ setSelected, setCenter })  {
       clearSuggestions();
       const results = await getGeocode({address});
       const {lat, lng} = await getLatLng(results[0]);
-      // setSelected({lat,lng});
+      // setSelected({lat,lng});  
       setCenter({lat,lng});
     };
   
     return (
+      <div>
+
+      
       <Combobox onSelect={handleSelect}>
-        <ComboboxInput 
+       <ComboboxInput 
             value={value} 
-            onChange={handleInput} 
+            onChange={handleInput}
             disabled={!ready} 
             className="combobox-input"
-            placeholder="Default: Timisoara"
+            placeholder="Timisoara"
+
         />
         <ComboboxPopover>
           <ComboboxList>
@@ -51,5 +58,6 @@ export default function PlacesAutocomplete({ setSelected, setCenter })  {
           </ComboboxList>
         </ComboboxPopover>
       </Combobox>
+      </div>
     );
   };
