@@ -7,7 +7,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy  =>
                       {
-                        policy.WithOrigins("http://localhost:3000", "https://citydangersui.azurewebsites.net/")
+                        policy.WithOrigins( "https://localhost:7281",
+                                            "http://localhost:3000", 
+                                            "https://citydangersui.azurewebsites.net", 
+                                            "http://citydangersui.azurewebsites.net")
                             .AllowAnyHeader()
                             .AllowAnyMethod()
                             .AllowCredentials();
@@ -27,9 +30,10 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
 
 app.UseCors(MyAllowSpecificOrigins);
-
 app.UseAuthorization();
 
 app.MapControllers();

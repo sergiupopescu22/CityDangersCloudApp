@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Azure.Messaging.ServiceBus;
 using Azure.Identity;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.WindowsAzure.Storage;
 
 namespace webapi.Controllers;
 
 [ApiController]
 [Route("issuecontroller")]
+[EnableCors("_myAllowSpecificOrigins")]
 public class IssueController : ControllerBase
 {
     private readonly ILogger<IssueController> _logger;
