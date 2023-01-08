@@ -1,3 +1,5 @@
 README.txt
 source/webapi/bin/
 source/webapi/obj/
+source/background_worker/bin/
+source/background_worker/obj/
