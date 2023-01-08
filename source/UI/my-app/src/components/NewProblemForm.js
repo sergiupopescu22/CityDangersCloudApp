@@ -17,11 +17,12 @@ export default function NewProblemForm({location}){
         rowKey: Date().toLocaleString(),
         });
         try{
-            const resp = await axios.post('https://localhost:7281/issuecontroller', 
+            // const resp = await axios.post('https://localhost:7281/issuecontroller', 
+            const resp = await axios.post('http://40.89.243.139/issuecontroller', 
             {latitudine: location.lat, 
             longitudine: location.lng,
         issue: descriere,
-        partitionKey: "5000000234456",
+        partitionKey: "5000030234456",
         rowKey: Date().toLocaleString(),
         })
         }catch(error){
